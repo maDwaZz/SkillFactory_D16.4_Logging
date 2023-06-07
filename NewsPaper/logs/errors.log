@@ -1,0 +1,214 @@
+2023-06-07 06:43:04,501 ERROR Internal Server Error: /news/ C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateDoesNotExist'>, TemplateDoesNotExist('news/post_list.html'), <traceback object at 0x000001B5ABACA300>)
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: news/post_list.html
+2023-06-07 06:43:04,503 ERROR "GET /news/ HTTP/1.1" 500 90011 C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-06-07 06:45:04,266 ERROR Internal Server Error: /news/ C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateDoesNotExist'>, TemplateDoesNotExist('news/post_list.html'), <traceback object at 0x000001FB8F146140>)
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: news/post_list.html
+2023-06-07 06:45:04,284 ERROR "GET /news/ HTTP/1.1" 500 145 C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-06-07 06:47:36,720 ERROR Internal Server Error: /news/ C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\utils\log.py (<class 'django.core.exceptions.ImproperlyConfigured'>, ImproperlyConfigured('NewsList is missing a QuerySet. Define NewsList.model, NewsList.queryset, or override NewsList.get_queryset().'), <traceback object at 0x000002C6D9AE6000>)
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\NewsPaper\news\views.py", line 40, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\views\generic\list.py", line 36, in get_queryset
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: NewsList is missing a QuerySet. Define NewsList.model, NewsList.queryset, or override NewsList.get_queryset().
+2023-06-07 06:47:36,722 ERROR "GET /news/ HTTP/1.1" 500 93014 C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-06-07 06:56:05,574 ERROR Internal Server Error: /news/ C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateDoesNotExist'>, TemplateDoesNotExist('news/post_list.html'), <traceback object at 0x00000231F2B24BC0>)
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: news/post_list.html
+2023-06-07 06:56:05,592 ERROR "GET /news/ HTTP/1.1" 500 145 C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-06-07 06:57:27,249 ERROR Internal Server Error: /news/ C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateDoesNotExist'>, TemplateDoesNotExist('news/post_list.html'), <traceback object at 0x0000024C6EBFD4C0>)
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: news/post_list.html
+2023-06-07 06:57:27,270 ERROR "GET /news/ HTTP/1.1" 500 145 C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-06-07 06:57:43,526 ERROR Internal Server Error: /news/ C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateDoesNotExist'>, TemplateDoesNotExist('news/post_list.html'), <traceback object at 0x0000024C6EED3500>)
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: news/post_list.html
+2023-06-07 06:57:43,534 ERROR "GET /news/ HTTP/1.1" 500 145 C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-06-07 06:58:50,233 ERROR Internal Server Error: /news/ C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateDoesNotExist'>, TemplateDoesNotExist('news/post_list.html'), <traceback object at 0x0000024C6EECBE40>)
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: news/post_list.html
+2023-06-07 06:58:50,240 ERROR "GET /news/ HTTP/1.1" 500 145 C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-06-07 06:59:26,159 ERROR Internal Server Error: /news/ C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateDoesNotExist'>, TemplateDoesNotExist('news/post_list.html'), <traceback object at 0x000001C9D7F81740>)
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: news/post_list.html
+2023-06-07 06:59:26,174 ERROR "GET /news/ HTTP/1.1" 500 145 C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-06-07 06:59:46,857 ERROR Internal Server Error: /news/ C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateDoesNotExist'>, TemplateDoesNotExist('news/post_list.html'), <traceback object at 0x000001BE528FA200>)
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: news/post_list.html
+2023-06-07 06:59:46,877 ERROR "GET /news/ HTTP/1.1" 500 145 C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-06-07 07:00:19,284 ERROR Internal Server Error: /news/ C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\utils\log.py (<class 'django.core.exceptions.ImproperlyConfigured'>, ImproperlyConfigured('NewsList is missing a QuerySet. Define NewsList.model, NewsList.queryset, or override NewsList.get_queryset().'), <traceback object at 0x00000274B56440C0>)
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\NewsPaper\news\views.py", line 40, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\views\generic\list.py", line 36, in get_queryset
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: NewsList is missing a QuerySet. Define NewsList.model, NewsList.queryset, or override NewsList.get_queryset().
+2023-06-07 07:00:19,300 ERROR "GET /news/ HTTP/1.1" 500 145 C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-06-07 07:01:05,306 ERROR Internal Server Error: /news/ C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\utils\log.py (<class 'django.core.exceptions.ImproperlyConfigured'>, ImproperlyConfigured('NewsList is missing a QuerySet. Define NewsList.model, NewsList.queryset, or override NewsList.get_queryset().'), <traceback object at 0x00000217037590C0>)
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\views\generic\list.py", line 36, in get_queryset
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: NewsList is missing a QuerySet. Define NewsList.model, NewsList.queryset, or override NewsList.get_queryset().
+2023-06-07 07:01:05,308 ERROR "GET /news/ HTTP/1.1" 500 88692 C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-06-07 07:28:01,840 ERROR Internal Server Error: /news/ C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\utils\log.py (<class 'django.core.exceptions.ImproperlyConfigured'>, ImproperlyConfigured('NewsList is missing a QuerySet. Define NewsList.model, NewsList.queryset, or override NewsList.get_queryset().'), <traceback object at 0x00000214C221DA80>)
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\views\generic\list.py", line 36, in get_queryset
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: NewsList is missing a QuerySet. Define NewsList.model, NewsList.queryset, or override NewsList.get_queryset().
+2023-06-07 07:28:01,859 ERROR "GET /news/ HTTP/1.1" 500 88590 C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-06-07 07:29:09,411 ERROR Internal Server Error: /news/search/ C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\utils\log.py (<class 'django.core.exceptions.ImproperlyConfigured'>, ImproperlyConfigured('NewsSearch is missing a QuerySet. Define NewsSearch.model, NewsSearch.queryset, or override NewsSearch.get_queryset().'), <traceback object at 0x000001A37E42BB80>)
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+  File "C:\Users\User\PycharmProjects\DjangoTest3\NewsPaper\news\views.py", line 51, in get_queryset
+    queryset = super().get_queryset()
+  File "C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\views\generic\list.py", line 36, in get_queryset
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: NewsSearch is missing a QuerySet. Define NewsSearch.model, NewsSearch.queryset, or override NewsSearch.get_queryset().
+2023-06-07 07:29:09,413 ERROR "GET /news/search/ HTTP/1.1" 500 92486 C:\Users\User\PycharmProjects\DjangoTest3\venv\lib\site-packages\django\core\servers\basehttp.py None
